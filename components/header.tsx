@@ -2,6 +2,7 @@ import React from 'react';
 import {PageContainer} from "@/components/page-container";
 import Link from "next/link";
 import {Contacts} from "@/components/contacts";
+import {Menu} from "@/components/ui/menu";
 
 const Header = () => {
     return (
@@ -14,7 +15,7 @@ const Header = () => {
                     </div>
                 </Link>
                 <div>
-                    Menu
+                    <Menu variant={'desktop'}/>
                 </div>
                 <div>
                     <Contacts/>
