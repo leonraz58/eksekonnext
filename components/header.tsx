@@ -3,12 +3,14 @@ import {PageContainer} from "@/components/page-container";
 import Link from "next/link";
 import {Contacts} from "@/components/contacts";
 import {Menu} from "@/components/ui/menu";
+import BurgerButton from "@/components/burger-button";
 
 const Header = () => {
     return (
         <header
             className={"fixed top-0 w-full z-10 bg-white/90 shadow-md h-14"}>
             <PageContainer className={'flex items-center justify-between h-full'}>
+                <BurgerButton/>
                 <Link href="/">
                     <div className={"flex items-center justify-center"}>
                         <img src="/assets/images/logo.png" alt="eksekon" className={'w-48'}/>
