@@ -22,7 +22,7 @@ type Props = {
 
 export const Menu = ({variant}: Props) => {
     return <nav >
-        <ul className={cn(variant === 'desktop' && 'flex justify-center gap-8', '')}>
+        <ul className={cn(variant === 'desktop' && 'flex justify-center gap-8', variant === 'mobile' && 'flex flex-col justify-center items-center gap-8')}>
             {items.map((item, i) => {
                 return <li key={i}>
                     <Link href={item.href}

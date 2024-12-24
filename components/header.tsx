@@ -11,7 +11,7 @@ export const Header = () => {
 
     const [width, setWidth] = useState(window.innerWidth);
     const breakpoint = 768
-    let isMobile = width < breakpoint
+    const isMobile = width < breakpoint
 
     useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth);
@@ -21,7 +21,7 @@ export const Header = () => {
 
     return (
         <header
-            className={"fixed top-0 w-full z-10 bg-white/90 shadow-md h-14"}>
+            className={"fixed z-10 top-0 w-full bg-white/90 shadow-md h-14"}>
             <PageContainer className={'flex items-center justify-between h-full'}>
                 {isMobile && <BurgerButton/>}
                 <Link href="/">
