@@ -6,7 +6,6 @@ import {Header} from "@/components/header";
 export default function Home() {
     return (
         <div className={'mt-16'}>
-            <Header/>
             <PageContainer>
                 <div className={'flex items-center justify-center'}>
                     <SliderMain/>
