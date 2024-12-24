@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "@/components/header";
 import {SliderMain} from "@/components/slider-main";
 import {PageContainer} from "@/components/page-container";
+import {Header} from "@/components/header";
 
 export default function Home() {
     return (

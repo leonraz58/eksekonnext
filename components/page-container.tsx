@@ -6,5 +6,5 @@ interface Props {
 }
 
 export const PageContainer: React.FC<React.PropsWithChildren<Props>> = ({ className, children }) => {
-    return <div className={cn('mx-auto max-w-[1400px] w-full px-7', className)}>{children}</div>;
+    return <div className={cn('mx-auto max-w-[1400px] w-full px-1 sm:px-2 md:px-7', className)}>{children}</div>;
 };
