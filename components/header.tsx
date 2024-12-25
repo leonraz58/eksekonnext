@@ -9,9 +9,11 @@ import BurgerButton from "@/components/burger-button";
 
 export const Header = () => {
 
-    const [width, setWidth] = useState(window.innerWidth);
+    const [width, setWidth] = useState(0);
     const breakpoint = 768
     const isMobile = width < breakpoint
+
+    useEffect(() => setWidth(window.innerWidth), [])
 
     useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth);
