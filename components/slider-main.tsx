@@ -8,7 +8,7 @@ import Fade from "embla-carousel-fade";
 
 export const SliderMain = () => {
     return (
-        <Carousel className="w-full"
+        <Carousel className="w-full pt-2"
                   opts={{loop: true}}
                   plugins={[
             Autoplay({ playOnInit: true, stopOnMouseEnter: true, delay: 3000 }),
