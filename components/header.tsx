@@ -1,11 +1,10 @@
 'use client'
 import React, {useEffect, useState} from 'react';
-import {PageContainer} from "@/components/page-container";
 import Link from "next/link";
 import {Contacts} from "@/components/contacts";
 import {Menu} from "@/components/ui/menu";
 import BurgerButton from "@/components/burger-button";
-
+import {PageContainer} from "@/components/page-container";
 
 export const Header = () => {
 
