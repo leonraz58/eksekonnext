@@ -1,3 +1,4 @@
+'use client'
 import * as React from "react";
 import {useCarousel} from "@/components/carousel/use-carousel";
 import {cn} from "@/lib/utils";
