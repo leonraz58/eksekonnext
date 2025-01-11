@@ -1,18 +1,24 @@
+'use client'
 import {PageContainer} from "@/components/page-container";
 import * as React from "react";
-import {instance} from "@/lib/instance";
-import {Item} from "@/lib/types";
 import {CardItem} from "@/components/card-item";
+import {useGetItemsQuery} from "@/lib/items-api";
 
-export default async function CatalogPage() {
 
-    const { data } = await instance.get<Array<Item>>('/items');
+export default function CatalogPage() {
 
+    // const { data } = await instance.get<Array<Item>>('/items');
+
+    const { data, isLoading } = useGetItemsQuery()
+
+    if (isLoading) {
+        return <div>Loading...</div>
+    }
 
     return (
         <section className={'text-9xl'}>
             <PageContainer>
-                <CardItem item={data[0]}/>
+                {data && <CardItem item={data[0]}/>}
             </PageContainer>
         </section>
 
